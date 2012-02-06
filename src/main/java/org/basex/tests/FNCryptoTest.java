@@ -127,9 +127,9 @@ public class FNCryptoTest {
     new File(KEYSTORE).delete();
 
     final Process proc = Runtime.getRuntime().exec(GENKEY_CMD);
-    Thread.sleep(2000); // give the keytool some time to finish
-    if(proc.exitValue() != 0)
+    if(proc.waitFor() != 0) {
       throw new RuntimeException("Cannot initialize keystore.");
+    }
 
     context = new Context();
     // turn off pretty printing
