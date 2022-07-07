@@ -9,7 +9,7 @@
     <compileSource>1.6</compileSource>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <jettyVersion>8.1.6.v20120903</jettyVersion> 
+    <jettyVersion>10.0.10</jettyVersion> 
   </properties>
   <repositories>
     <repository>
